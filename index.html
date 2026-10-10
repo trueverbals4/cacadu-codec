@@ -156,6 +156,51 @@ td.num{font-family:var(--mono);text-align:right;white-space:nowrap}
 footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--rule);font-family:var(--mono);font-size:.76rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
 
 @media (max-width:520px){.stage{grid-template-columns:40px 1fr}.stage .idx{font-size:1.6rem}.pkt{grid-template-columns:1fr;gap:4px}}
+
+/* Readability + bubble cards (v2) */
+:root{--shadow:0 6px 22px rgba(23,32,31,.08),0 1px 3px rgba(23,32,31,.06)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--shadow:0 6px 22px rgba(0,0,0,.35),0 1px 3px rgba(0,0,0,.3)}}
+:root[data-theme="dark"]{--shadow:0 6px 22px rgba(0,0,0,.35),0 1px 3px rgba(0,0,0,.3)}
+body{font-size:1.2rem;line-height:1.7}
+.wrap{max-width:1180px}
+.col{max-width:760px}
+.muted,.panel p,.stage p,.case p,.layer span,.small,.hero .lede{color:color-mix(in srgb,var(--ink) 78%,var(--paper))}
+.hero .lede{font-size:1.4rem}
+h2{font-size:clamp(2rem,4.4vw,2.9rem)}
+h3{font-size:1.3rem}
+.eyebrow,.sec-head .n{font-size:.85rem}
+nav .wrap{font-size:.85rem}
+.specs{font-size:.95rem}
+.panel,.case,.ip{border-radius:22px;padding:24px 26px;box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--rule) 70%,transparent)}
+.panel p,.case p{font-size:1.06rem}
+.panel .k,.ip .k,.todo .tk{font-size:.8rem}
+.grid2,.grid3,.recov{gap:24px}
+.layers{border-radius:22px;box-shadow:var(--shadow)}
+.layer{padding:18px 24px}
+.layer b{font-size:1.12rem}
+.layer span{font-size:1.04rem}
+.tbl,.chart{border-radius:20px;box-shadow:var(--shadow)}
+table{font-size:1.04rem}
+th{font-size:.8rem}
+th,td{padding:13px 18px}
+.chart{padding:22px}
+.chart text{font-size:13px}
+.chart .lab,.chart .val{font-size:14px}
+.shot{border-radius:20px;padding:14px;box-shadow:var(--shadow)}
+.shot img{border-radius:10px}
+.slide{border-radius:20px;box-shadow:var(--shadow)}
+.cap{font-size:.9rem;line-height:1.5}
+.stage{padding-block:22px}
+.stage p{font-size:1.08rem}
+.stage .out{font-size:.9rem}
+.stage .idx{font-size:2.6rem}
+.bytes{height:54px;font-size:.82rem;border-radius:12px}
+.pkt .lbl{font-size:.85rem}
+.pull{font-size:1.65rem}
+.chip{font-size:.8rem;padding:3px 10px}
+.dots i{width:20px;height:20px;border-radius:5px}
+footer{font-size:.85rem}
+@media (max-width:560px){body{font-size:1.1rem}.panel,.case,.ip{padding:20px}}
 </style>
 
 </head>
